@@ -28,4 +28,15 @@ fun main(){
         }
         else -> println("$operator is invalid operator")
     }
+
+    val a1 : Int = 12
+    val b1 : Int = 24
+    val result1 = when(operator){
+        "+" ->"$a1 + $b1 = "+(a1 + b1)
+        "-" ->"$a1 - $b1 = "+(a1 - b1)
+        "*" ->"$a1 * $b1 = "+(a1 * b1)
+        "/" ->"$a1 / $b1 = "+(a1 / b1)
+        else -> "$operator is invalid"
+    }
+    println(result1)
 }
